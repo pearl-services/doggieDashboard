@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background: #050505;
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.cyber-container {
+  padding: 2rem;
+}
+
+.cyber-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0ff;
+  text-shadow: 0 0 12px #0ff;
+  margin-bottom: 2rem;
+}
+
+.cyber-panel {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(6px);
+  border: 2px solid;
+  box-shadow: 0 0 20px;
+  animation: panelPulse 4s infinite alternate;
+}
+
+.neon-cyan {
+  border-color: #00ffff;
+  box-shadow: 0 0 20px #00ffff88;
+}
+
+.neon-magenta {
+  border-color: #ff00ff;
+  box-shadow: 0 0 20px #ff00ff88;
+}
+
+@keyframes panelPulse {
+  from { box-shadow: 0 0 10px #0ff; }
+  to { box-shadow: 0 0 25px #0ff; }
+}
+
+.cyber-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cyber-btn {
+  background: transparent;
+  border: 2px solid #ff0099;
+  color: #ff0099;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.2s;
+  text-shadow: 0 0 8px #ff0099;
+}
+
+.cyber-btn:hover {
+  background: #ff0099;
+  color: black;
+  box-shadow: 0 0 12px #ff0099;
+}
+
+.cyber-grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cyber-card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px #000;
+  transition: 0.2s;
+}
+
+.cyber-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #0ff;
+}
+
+.cyber-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cyber-card-footer {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,51 @@
+const API_KEY = import.meta.env.VITE_DOG_API_KEY;
+
+export async function fetchBreedImages(breedId, limit = 50) {    
+  try {
+    const res = await fetch(
+      `https://api.thedogapi.com/v1/images/search?breed_id=${breedId}&limit=${limit}`,
+      {
+        headers: {
+          "x-api-key": API_KEY
+        }
+      }
+    );
+
+    if (!res.ok) {
+      console.error("🐾 Dog API error:", res.status);
+      return [];
+    }
+
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    console.error("🐾 Network error:", err);
+    return [];
+  }
+}
+
+export async function fetchBreeds() {
+    try{
+    const res = await fetch(
+      `https://api.thedogapi.com/v1/breeds`,
+      {
+        headers: {
+          "x-api-key": API_KEY
+        }
+      }
+    );
+
+    if (!res.ok) {
+      console.error("🐾 Dog API error:", res.status);
+      return [];
+    }
+
+    const data = await res.json();
+    console.log(data)
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    console.error("🐾 Network error:", err);
+    return [];
+  }
+
+}
