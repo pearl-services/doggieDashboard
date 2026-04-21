@@ -4,7 +4,7 @@ This application was written with React and Vite. It calls 2 APIs from the DogAp
 
 To run this app as a React app, just follow the following directions (assuming you have node, vite and react already installed):
   - download the application and unzip it
-  - cd into the DoggieDashboard directory
+  - cd into the DoggieDashboard-main directory
   - type npm install
   - type npm run dev
 
