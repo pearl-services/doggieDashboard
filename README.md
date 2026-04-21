@@ -1,16 +1,13 @@
-# React + Vite
+# Doggie Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application was written with React and Vite. It calls 2 APIs from the DogApi site. One to retrieve images of the chosen breed and one to retrieve a list of breeds.
 
-Currently, two official plugins are available:
+To run this app as a React app, just follow the following directions (assuming you have node, vite and react already installed):
+  - download the application and unzip it
+  - cd into the DoggieDashboard directory
+  - type npm install
+  - type npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# I hope you enjoy the application and find it useful.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
