@@ -1,5 +1,5 @@
-const API_KEY = import.meta.env.VITE_DOG_API_KEY;
-
+//const API_KEY = import.meta.env.VITE_DOG_API_KEY;
+const API_KEY="live_fQ5v1UNvM9V6fZ8jLtEIWTo5A55sY3QYhPQAcqb90q00hNkjYL7YJtkown3fzQ6t"
 export async function fetchBreedImages(breedId, limit = 50) {    
   try {
     const res = await fetch(
