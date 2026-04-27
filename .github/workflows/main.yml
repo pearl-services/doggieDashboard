@@ -32,4 +32,6 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v7
         with: 
-          name: dist-files  
+          name: dist-files
+      - name: Run Application
+        run: npm run start
