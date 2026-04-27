@@ -9,6 +9,8 @@ on:
   workflow_dispatch: 
 jobs: 
   build:
+    env:
+      API_KEY: {{ secrets.DOGAPIKEY }}
     runs-on: ubuntu-latest
     steps: 
       - name: Get Code
