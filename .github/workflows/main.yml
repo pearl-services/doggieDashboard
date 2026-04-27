@@ -34,4 +34,4 @@ jobs:
         with: 
           name: dist-files
       - name: Run Application
-        run: npm run start
+        run: npm run dev
