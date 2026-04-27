@@ -33,5 +33,3 @@ jobs:
         uses: actions/download-artifact@v7
         with: 
           name: dist-files
-      - name: Run Application
-        run: npm run dev
